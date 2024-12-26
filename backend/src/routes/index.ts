@@ -9,6 +9,9 @@ export const routes = (app: Application) => {
   //   const [url, router] = route
   //   app.use(url, router)
   // })
+  app.get('/', (req, res) => {
+    res.send({message:'OK',success:true})
+  })
   app.get('/health', (req, res) => {
     res.send({success:true})
   })
